@@ -1,0 +1,90 @@
+    "dota_shops"
+    {
+ //Home Shop Start
+ //--------------------------
+
+    "consumables"
+    {
+        "item"      "item_stick_c"
+		"item"      "item_vitality_booster_ñ"
+		"item"      "item_quelling_blade_ñ_x"
+		"item"      "item_faerie_fire_c"
+		"item"      "item_enchanted_mango_c"
+		"item"      "item_clarity_c"
+		"item"      "item_sheepstick_c"
+		"item"      "item_energy_booster_c"
+		"item"      "item_gem_c"
+		"item"      "item_wind_lace_c"
+		"item"		"item_courier"
+    }
+
+    "attributes"
+    {
+    }
+
+    "weapons_armor"
+    {
+ 
+    }
+
+    "misc"
+    {
+
+    }   
+
+    // Level 1 - Green Recipes
+    "basics"
+    {
+ 
+    }
+
+    // Level 2 - Blue Recipes
+    "support"
+    {
+ 
+    }
+
+    "magics"
+    {
+
+    }
+
+    // Level 3 - Purple Recipes
+    "defense"
+    {
+
+    }
+
+    "weapons"
+    {
+
+    }
+
+ // Level 4 - Orange / Orb / Artifacts
+    "artifacts"
+    {
+
+    }
+
+  //Sideshop Start - Page 1
+  //--------------------------
+
+    "sideshop1"
+    {
+
+    }
+
+ //Sideshop Page 2
+
+    "sideshop2"
+    {
+
+    }
+
+ //Secret Shop Start
+ //--------------------------   
+
+    "secretshop"
+    {
+    }
+}

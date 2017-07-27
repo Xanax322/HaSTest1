@@ -9,8 +9,8 @@
 	"Ability2"        "blur_c"
     "Ability3"        "techies_stasis_trap_c_x"
     "Ability4"        "techies_stasis_trap_c"
-	"Ability5"        ""
-	"Ability6"      ""
+	"Ability5"        "riki_smoke_screen_c"
+	"Ability6"        "rattletrap_battery_assault_c"
 	"Ability10"		""
 	"Ability11"		""
 	"Ability12"		""
@@ -51,7 +51,7 @@
     "StatusManaRegen"     "2"                 // Mana regeneration rate.
 
     "VisionDaytimeRange"    "1200"                  // Range of vision at night time.
-    "VisionNighttimeRange"    "600"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
   }
   
   "npc_dota_hero_ancient_marnus_barebones"
@@ -59,12 +59,12 @@
     "AbilityLayout"     "6"
     "override_hero"     "npc_dota_hero_night_stalker"
     "SoundSet"          "0" 
-    "Ability1"        "clinkz_wind_walk_c" 
-    "Ability2"        "queenofpain_blink_с" 
+    "Ability1"        "queenofpain_blink_с"
+    "Ability2"        "clinkz_wind_walk_c"
     "Ability3"        "rattletrap_rocket_flare_c"
     "Ability4"        "bounty_hunter_track_c"
-	"Ability5"        ""
-	"Ability6"      ""
+	"Ability5"        "treant_overgrowth_c"
+	"Ability6"        "night_stalker_hunter_in_the_night_c"
 	"Ability10"		""
 	"Ability11"		""
 	"Ability12"		""
@@ -79,8 +79,8 @@
 
     "AttackDamageMin"     "1"                   // Damage range min.
     "AttackDamageMax"     "1"                	// Damage range max.
-	"AttackRate"          "0.8"
-	"AttackRange"				"150"
+	"AttackRate"          "1"
+	"AttackRange"				"128"
 
     //"AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
     "AttributeBaseStrength"   "0"                   // Base strength
@@ -100,14 +100,14 @@
     "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"       "390"                 // Speed.
     "MovementTurnRate"      "1.0"                 // Turning rate.
-
+	
     "StatusHealth"        "10000"                 // Base health.
     "StatusHealthRegen"     "10.0"                 // Health regeneration rate.
     "StatusMana"        "1000"                   // Base mana.
     "StatusManaRegen"     "15"                 // Mana regeneration rate.
 
     "VisionDaytimeRange"    "800"                  // Range of vision at night time.
-    "VisionNighttimeRange"    "2000"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "1000"                  // Range of vision at night time.
   }
   
 }

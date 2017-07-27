@@ -6,8 +6,8 @@
     "consumables"
     {
         "item"      "item_stick_c"
-		"item"      "item_vitality_booster_ñ"
-		"item"      "item_quelling_blade_ñ_x"
+		"item"      "item_vitality_booster_c"
+		"item"      "item_quelling_blade_c"
 		"item"      "item_faerie_fire_c"
 		"item"      "item_enchanted_mango_c"
 		"item"      "item_clarity_c"
@@ -15,11 +15,21 @@
 		"item"      "item_energy_booster_c"
 		"item"      "item_gem_c"
 		"item"      "item_wind_lace_c"
-		"item"		"item_courier"
+		"item"		"item_courier_c"
     }
 
     "attributes"
     {
+		"item"		"item_force_staff_c"
+		"item"		"item_ward_observer_c"
+		"item"		"item_lesser_crit_c"
+		"item"		"item_talisman_of_evasion_c"
+		"item"		"item_black_king_bar_c"
+		"item"		"item_octarine_core_c"
+		"item"		"item_heavens_halberd_c"
+		"item"		"item_bloodthorn_c"
+		"item"		"item_guardian_greaves_c"
+		"item"		"item_sobi_mask_c"
     }
 
     "weapons_armor"

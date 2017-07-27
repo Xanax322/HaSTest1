@@ -101,7 +101,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"blink_range"			"600"
+				"blink_range"			"700"
 			}
 			
 		}
@@ -297,10 +297,10 @@
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"400"
+		"AbilityCastRange"				"300"
 		"AbilityCastPoint"				"0.3"
 		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"500"
+		"AbilityManaCost"				"400"
 			
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -309,7 +309,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_radius"			"300"
+				"aura_radius"			"100"
 			}
 			"02"
 			{
@@ -320,12 +320,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"25"
+				"duration"				"10"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cast_range_tooltip"			"400"
+				"cast_range_tooltip"			"300"
 			}
 		}
 	}
@@ -397,7 +397,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"explode_delay"			    "0.1"
+				"explode_delay"			    "0.5"
 			}
 			"03"
 			{
@@ -412,7 +412,7 @@
 			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"activation_time"			"0.1"
+				"activation_time"			"0.2"
 			}	
 			"06"
 			{
@@ -463,7 +463,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"explode_delay"			    "2.0"
+				"explode_delay"			    "1.0"
 			}
 			"03"
 			{
@@ -511,7 +511,7 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"100"
+		"AbilityCastRange"				"350"
 		"AbilityCastPoint"				"0.3"
 		"MaxLevel"                      "1"
 		
@@ -592,18 +592,206 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"35"
+				"duration"					"25"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"fade_time"					"3.0"
+				"fade_time"					"1.2"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"move_speed_bonus_pct"		"22"
+				"move_speed_bonus_pct"		"25"
 			}
 		}
 	}
+	
+	"treant_overgrowth_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------												// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"		
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_Treant.Overgrowth.Cast"
+		"BaseClass"	"treant_overgrowth"
+		"AbilityCastPoint"				"0.3"
+		"AbilityTextureName" "strapon"
+		"MaxLevel"                      "1"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"250"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"2.5"
+			}
+			
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"700"
+			}	
+			
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"eyes_radius"					"700"
+			}				
+		}
+	}
+		"night_stalker_hunter_in_the_night_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------												// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"	"night_stalker_hunter_in_the_night"
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"150"
+		"MaxLevel"                      "1"
+		"AbilityTextureName" "fury"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"bonus_movement_speed_pct_night"	"0"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"bonus_attack_speed_night"			"0"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"duration"			"4.5"
+			}
+		}
+	}
+		"riki_smoke_screen_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilitySound"					"Hero_Riki.Smoke_Screen"
+		"BaseClass"	"riki_smoke_screen"
+		"MaxLevel"                      "1"
+		"AbilityTextureName" "pluha"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"450"
+		"AbilityCastPoint"				"0.4 0.4 0.4 0.4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25"
+		"AbilityDuration"				"7"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"65"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"325"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"miss_rate"					"50"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed_reduction"	"25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"turn_reduction"			"0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"7"
+			}
+		}
+	}
+	"rattletrap_battery_assault_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"			"rattletrap_battery_assault"											// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Rattletrap.Battery_Assault_Impact"
+		"AbilityTextureName" "nas"
+		"MaxLevel"                      "1"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+		
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"0"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// applies many mini-stuns
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"250"
+			}
+			"02"
+			{	
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"6"
+			}
+			"03"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"interval"			"0.9"
+			}
+		}
+	}
+	
 }

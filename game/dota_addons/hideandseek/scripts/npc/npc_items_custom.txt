@@ -193,7 +193,7 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"5.0"
+		"AbilityCooldown"				"12.0"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -226,12 +226,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"hp_restore"			"3"
+				"hp_restore"			"2"
 			}
 		}
 	}
 	
-	"item_quelling_blade_с_x"
+	"item_quelling_blade_c"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -282,7 +282,7 @@
 		}
 	}
 	
-	"item_vitality_booster_с"
+	"item_vitality_booster_c"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -497,7 +497,614 @@
 			}
 		}
 	}
-	
+	"item_talisman_of_evasion_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"3188"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"       "item_talisman_of_evasion"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					"evasion"
+		"ItemAliases"					"talisman of evasion"
+		"ItemDroppable"					"1" // 1 - можно выброcить. 0 - выброcить нельзя.
+	   "ItemSellable"					"0" // Можно ли продать.
+	   "ItemKillable"					"0" // Можно ли cломать, когда лежит на земле
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_evasion"			"45"
+			}
+		}
+	}
+		"item_lesser_crit_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1453"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_lesser_crit"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					"damage;crit"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"crystalys"
+		"ItemDroppable"					"1" // 1 - можно выброcить. 0 - выброcить нельзя.
+	   "ItemSellable"					"0" // Можно ли продать.
+	   "ItemKillable"	"0"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_chance"			"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_multiplier"		"300"
+			}
+		}
+	}
+	"item_ward_observer_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1955"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"Model"							"models/props_gameplay/observer_ward_bundle.vmdl"
+		"BaseClass" "item_ward_observer"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"1.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"observer ward"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemStockMax"					"4"
+		"ItemStockInitial"				"2"
+		"ItemStockTime"					"150.0"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES"
+		"ItemSupport"					"1"
+		"IsTempestDoubleClonable"		"0"
+		"ItemDroppable"					"1" 
+	   "ItemSellable"					"0" 
+	   "ItemKillable" "0"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lifetime"				"240"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_range"			"1600"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health"				"5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration_minutes_tooltip"				"4"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_range"			"500"
+			}
+		}
+	}
+	"item_force_staff_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1123"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM"
+		"FightRecapLevel"				"1"
+		"BaseClass" "item_force_staff"
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"25.0"
+		"AbilitySharedCooldown"			"force"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable"					"0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+		"ItemCost"						"99999"
+		"ItemShopTags"					"int;damage;attack_speed;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"fs;force staff"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"push_length"			"700"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_range"			"800"
+			}
+		}
+	}
+	"item_black_king_bar_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1161"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"FightRecapLevel"				"2"
+		"BaseClass" "item_black_king_bar"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50 45 40 35 30 25"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable"					"0"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					"str;damage;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"bkb;black king bar"
+		"ItemSellable"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"6.0 5.0 4.0 3.0 2.0 1.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_level"				"6"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"model_scale"			"0"     // Percentage over model scale
+			}
+		}
+	}
+	"item_octarine_core_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2399"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_octarine_core"
+		// Item Info 
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"mana;mb;octarine core"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable"					"0"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intelligence"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"100"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cooldown"		"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hero_lifesteal"		"0"
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"creep_lifesteal"		"0"
+			}	
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"active_duration"		"0"
+			}
+		}
+	}
+	"item_heavens_halberd_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"21023"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"BaseClass"		"item_heavens_halberd"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable"					"0"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.0"
+
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"85"
+		"ItemCost"						"99999"
+		"ItemShopTags"					"str;damage;evasion"
+		"ItemQuality"					"artifact"
+		"ItemAliases"					"heaven's halberd"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_evasion"				"0"
+			}			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"maim_chance"			"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"maim_slow_movement"	"0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"maim_slow_attack"		"0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"maim_slow_movement_range"	"0"
+			}			
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"maim_slow_attack_range"		"0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"maim_duration"			"0"
+			}			
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"disarm_range"				"5.0"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"disarm_melee"				"5.0"
+			}	
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"disarm_cast_range_tooltip"	"500"
+			}				
+		}
+	}
+	"item_bloodthorn_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"25120"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"BaseClass"		"item_bloodthorn"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable"					"0"
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"30.0"
+		"AbilitySharedCooldown"			"orchid"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"85"
+		"ItemCost"						"99999"
+		"ItemShopTags"					"int;attack_speed;damage;regen_mana;damage;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"orchid malevolence"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_chance"			"0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_multiplier"		"0"
+			}	
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"silence_damage_percent"	"0"
+			}	
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"silence_duration"		"5"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"target_crit_multiplier"		"0"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_range"			"500"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_crit_chance"	"0"
+			}
+		}
+	}
+	"item_guardian_greaves_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"21231"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"FightRecapLevel"				"1"
+		"BaseClass"		"item_guardian_greaves"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable"					"0"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+		"AbilityCastRange" 				"600"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"99999"
+		"ItemShopTags"					"int;armor;regen_health;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"guardian greaves"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemAlertable"					"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{				
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"150"
+			}		
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"0"
+			}	
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_health_regen"		"0"
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_armor"			"0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_health_regen_bonus"		"0"
+			}			
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_armor_bonus"			"0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_bonus_threshold"	"0"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"600"
+			}	
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_health"		"3"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_mana"		"150"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_radius"		"600"
+			}
+		}
+	}
+		"item_sobi_mask_c"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2832"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_sobi_mask"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					"regen_mana"
+		"ItemQuality"					"component"
+		"ItemAliases"					"sage's mask"
+		"SideShop"						"1"
+		"ItemShareability"				"ITEM_PARTIALLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"		"150"
+			}
+		}
+	}
 }
 	
 	

@@ -31,7 +31,6 @@ function Precache( context )
 	PrecacheResource("particle", "particles/econ/items/juggernaut/jugg_fortunes_tout/jugg_healing_ward_fortunes_tout_ward_gold_flame.vpcf", context) --heal
 	PrecacheResource("particle", "particles/msg_fx/msg_damage.vpcf", context) --heal
 	PrecacheResource("particle", "particles/units/heroes/hero_lion/lion_base_attack_glow.vpcf", context) --seed base attack
-
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_witch_doctor/", context) --heal
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_oracle/", context) --heal
 
@@ -47,6 +46,7 @@ function Precache( context )
 	PrecacheForHero("npc_dota_hero_bloodseeker", pathToIG, context)
 	PrecacheForHero("npc_dota_witch_doctor",pathToIG,context)	
 end
+
 
 -- Create the game mode when we activate
 function Activate()
@@ -112,4 +112,3 @@ print("----------------------------------------Precache Start-------------------
 	print('[Precache] End')
 
 end
-

@@ -108,6 +108,7 @@
 
     "VisionDaytimeRange"    "800"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1000"                  // Range of vision at night time.
+	
   }
   
 }

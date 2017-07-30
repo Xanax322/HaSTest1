@@ -8,7 +8,7 @@
 Label
 {
     font-size: 20px;
-    color: #999999;
+    color: #104735;
     vertical-align: top;
 }
  
@@ -20,8 +20,8 @@ Label
 
 #TitleName
 {
-    color: #4bd84e;  
-    font-size: 64px;
+    color: #0019ff;  
+    font-size: 42px;
     margin-left: 16px;
     margin-top: 16px;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ Label
     font-size: 25px;
     font-weight: bold;
     margin-top: 26px;
-    color: #4bd84e;    
+    color: #ff0000;    
     text-transform: uppercase;
 }
 
@@ -72,6 +72,7 @@ Label
 /* оформление нашего текста  */ 
 #InfoText
 {   
+	color: #ffd800; 
     margin-top:  10px;
     text-align: left;
     width: 200px;

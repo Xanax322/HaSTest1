@@ -54,6 +54,7 @@ GameRules:SetShowcaseTime(0)
 
 end
 
+
 function main:GameRulesStateChange(keys)
 	local newState = GameRules:State_Get()
 	if newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
@@ -68,6 +69,7 @@ function main:GameRulesStateChange(keys)
 
 	end
 end
+
 
 
 function main:OnNPCSpawn(data)
@@ -93,6 +95,7 @@ function main:OnNPCSpawn(data)
 				unit:AddNoDraw()
 				unit = PlayerResource:ReplaceHeroWith(unit:GetPlayerID(), "npc_dota_hero_night_stalker", 0, 0)
 				if GetMapName() == "OLD_map" then
+				
 				local table = {}
 				table[1] = Vector(-5747,-4680,128)
 				table[2] = Vector(5595,5896,128)
@@ -102,6 +105,7 @@ function main:OnNPCSpawn(data)
 				
 				unit:SetAbsOrigin(table[RandomInt(1,5)])
 				else
+				
 				local table = {}
 				table[1] = Vector(5751,5581,128)
 				table[2] = Vector(5752,5582,128)
@@ -110,11 +114,29 @@ function main:OnNPCSpawn(data)
 				table[5] = Vector(5755,5585,128)
 				
 				unit:SetAbsOrigin(table[RandomInt(1,5)])
+			
 				end
 			end,
 			1)
 
 		end
 
+	end
+end
+
+function main:OnHeroKilled(data)
+	local AllDead = true
+
+	for i=0,5 do 
+		if PlayerResource:IsValidPlayer(i) then
+			local Hero = PlayerResource:GetSelectedHeroEntity(i)
+			if Hero:IsAlive() and Hero:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
+				AllDead = false
+			end
+		end
+	end
+
+	if AllDead then
+		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
 	end
 end

@@ -1,5 +1,6 @@
 <root>
 	<Panel>
 		<CustomUIElement type="GameInfo" 	layoutfile="file://{resources}/layout/custom_game/game_info.xml" />
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/custom_timer.xml" />
 	</Panel>
 </root>

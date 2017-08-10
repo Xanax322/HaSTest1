@@ -5,7 +5,7 @@ if main == nil then
 end
 
 require( 'main' )
-
+require( 'timers' )
 function Precache( context )
 	--[[
 		Precache things we know we'll use.  Possible file types include (but not limited to):
@@ -53,7 +53,7 @@ function Activate()
 	main:InitGameMode()
 end
 
-
+CustomGameEventManager:Send_ServerToAllClients("display_timer", {msg="Remaining", duration=10, mode=0, endfade=false, position=0, warning=5, paused=false, sound=true} )
 
 function IsForHero(str, tbl)
 	if type(tbl["used_by_heroes"]) ~= type(1) and tbl["used_by_heroes"] then -- привет от вашего друга, индийского быдлокодера работающего за еду

@@ -7,19 +7,23 @@ deadTowerCounter = 0
 
 function main:InitGameMode()
 	print( "InitGameMode" )
+	if GetMapName() == "has_11_players" then 
+	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 10 )
+	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 1 )
+	else
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 1 )
-	
+	end
 	--GameRules:SetTimeOfDay( 0.75 )
 	GameRules:SetHeroRespawnEnabled( true )
 	GameRules:SetUseUniversalShopMode( false )
 
 	GameRules:SetPreGameTime( 5.0 )
-	GameRules:SetPostGameTime( 0.0 )
+	GameRules:SetPostGameTime( 15.0 )
 	GameRules:SetTreeRegrowTime( 120.0 )
-	GameRules:SetHeroMinimapIconScale( 0.4 )
-	GameRules:SetCreepMinimapIconScale( 0.4 )
-	GameRules:SetRuneMinimapIconScale( 0.4 )
+	GameRules:SetHeroMinimapIconScale( 0.6 )
+	GameRules:SetCreepMinimapIconScale( 0.6 )
+	GameRules:SetRuneMinimapIconScale( 0.6 )
 	GameRules:SetGoldTickTime( 2.0 )
 	GameRules:SetGoldPerTick( 3 )
 	GameRules:SetStartingGold(1000)
@@ -49,11 +53,66 @@ GameRules:SetShowcaseTime(0)
 --	ListenToGameEvent("dota_player_gained_level", Dynamic_Wrap(main, 'OnPlayerGainedLevel'), self)
 --	ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(main, 'OnItemPickedUp'), self)	
 	ListenToGameEvent("dota_player_killed", Dynamic_Wrap(main, "OnHeroKilled"), self)
+	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(main, 'OnGameRulesStateChange'), self)
 	
 
 
 end
 
+
+
+function main:OnGameRulesStateChange(keys)
+    local newState = GameRules:State_Get()
+    if newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+        main:Timer()
+    end
+end
+
+
+function main:Timer()
+local numberOfPlayers = PlayerResource:GetPlayerCount()
+	if numberOfPlayers == 11 then
+		Timers:CreateTimer(2700, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 9  then
+		Timers:CreateTimer(2600, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 9  then
+		Timers:CreateTimer(2500, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 8  then
+		Timers:CreateTimer(2400, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 7  then
+		Timers:CreateTimer(2100, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 6  then
+		Timers:CreateTimer(1800, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 5  then
+		Timers:CreateTimer(1500, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 4  then
+		Timers:CreateTimer(1200, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	elseif numberOfPlayers == 3  then
+		Timers:CreateTimer(900, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	else
+		Timers:CreateTimer(600, function()
+		GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+	end)
+	end
+end
 
 function main:GameRulesStateChange(keys)
 	local newState = GameRules:State_Get()
@@ -104,6 +163,7 @@ function main:OnNPCSpawn(data)
 				table[5] = Vector(1030,-2239,128)
 				
 				unit:SetAbsOrigin(table[RandomInt(1,5)])
+
 				else
 				
 				local table = {}
@@ -127,7 +187,7 @@ end
 function main:OnHeroKilled(data)
 	local AllDead = true
 
-	for i=0,5 do 
+	for i=0,10 do 
 		if PlayerResource:IsValidPlayer(i) then
 			local Hero = PlayerResource:GetSelectedHeroEntity(i)
 			if Hero:IsAlive() and Hero:GetTeamNumber() == DOTA_TEAM_GOODGUYS then

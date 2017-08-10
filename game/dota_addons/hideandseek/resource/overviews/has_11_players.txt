@@ -1,0 +1,8 @@
+has_11_players
+{
+	material materials/overviews/has_11_players.vmat
+	pos_x -8704
+	pos_y 8704
+	scale 17.000
+}
+

@@ -7,7 +7,7 @@
 		"Model"							"models/props_gameplay/branch.vmdl"
 		"BaseClass"						"item_branches"
 		"ItemBaseLevel"					"1"
-
+		"AbilityTextureName" "tree"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"200"
@@ -102,7 +102,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"Model"							"models/props_gameplay/clarity.vmdl"
         "BaseClass"		                "item_clarity"
-
+		"AbilityTextureName" "water"
 		
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -147,6 +147,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"Model"							"models/props_gameplay/mango.vmdl"
 		"BaseClass"                     "item_enchanted_mango"
+		"AbilityTextureName" "apple"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"200"
@@ -190,6 +191,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"BaseClass"                     "item_faerie_fire"
+		"AbilityTextureName" "bint"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.0"
@@ -239,7 +241,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
-
+		"AbilityTextureName" "axe"
 		"AbilityCastRange"				"350"
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"2.0"
@@ -289,7 +291,7 @@
 		"ID"							"61321"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"BaseClass"                     "item_vitality_booster"
-		
+		"AbilityTextureName" "cur"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"
@@ -320,7 +322,7 @@
 		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_gem.vpcf"
 		"BaseClass"                     "item_gem"
-
+		"AbilityTextureName" "glas"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"500"
@@ -361,7 +363,7 @@
 		"ID"							"591231"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"BaseClass"                     "item_energy_booster"
-		
+		"AbilityTextureName" "flash"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"
@@ -393,7 +395,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"FightRecapLevel"				"2"
 		"BaseClass"                     "item_sheepstick"
-
+		"AbilityTextureName" "pig"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"300"
@@ -457,7 +459,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		//"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
 		"BaseClass"                     "item_wind_lace"
-		
+		"AbilityTextureName" "skin"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -504,6 +506,7 @@
 		"ID"							"3188"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"BaseClass"       "item_talisman_of_evasion"
+		"AbilityTextureName" "evasion"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"99999"
@@ -530,6 +533,7 @@
 		"ID"							"1453"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"BaseClass" "item_lesser_crit"
+		"AbilityTextureName" "claw"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"99999"
@@ -571,7 +575,7 @@
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
 		"Model"							"models/props_gameplay/observer_ward_bundle.vmdl"
 		"BaseClass" "item_ward_observer"
-		
+		"AbilityTextureName" "eye"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"500"
@@ -638,6 +642,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM"
 		"FightRecapLevel"				"1"
 		"BaseClass" "item_force_staff"
+		"AbilityTextureName" "force"
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
@@ -690,6 +695,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"FightRecapLevel"				"2"
 		"BaseClass" "item_black_king_bar"
+		"AbilityTextureName" "fury"
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"50 45 40 35 30 25"
@@ -743,6 +749,7 @@
 		"ID"							"2399"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"BaseClass" "item_octarine_core"
+		"AbilityTextureName" "satan"
 		// Item Info 
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"99999"
@@ -804,6 +811,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"BaseClass"		"item_heavens_halberd"
+		"AbilityTextureName" "cep"
 		"ItemDroppable"					"1"
 	   "ItemSellable"					"0" 
 	   "ItemKillable"					"0"
@@ -901,6 +909,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"BaseClass"		"item_bloodthorn"
+		"AbilityTextureName" "necr"
 		"ItemDroppable"					"1"
 	   "ItemSellable"					"0" 
 	   "ItemKillable"					"0"
@@ -988,6 +997,7 @@
 		"ID"							"21231"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"FightRecapLevel"				"1"
+		"AbilityTextureName" "god"
 		"BaseClass"		"item_guardian_greaves"
 		"ItemDroppable"					"1"
 	   "ItemSellable"					"0" 
@@ -1085,6 +1095,7 @@
 		"ID"							"2832"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"BaseClass" "item_sobi_mask"
+		"AbilityTextureName" "mus"
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"99999"
@@ -1093,6 +1104,9 @@
 		"ItemAliases"					"sage's mask"
 		"SideShop"						"1"
 		"ItemShareability"				"ITEM_PARTIALLY_SHAREABLE"
+		"ItemDroppable"					"1"
+	   "ItemSellable"					"0" 
+	   "ItemKillable" "0"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1142,6 +1156,272 @@
 
 	}
 }
+
+"item_note_1"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60123"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_2"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60128"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_3"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60127"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_4"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60126"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_5"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60125"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_6"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60124"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_7"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60122"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	"item_note_8"
+{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"60121"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass" "item_point_booster"
+		"AbilityTextureName" "note_blood"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					""
+		"SecretShop"					"1"
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+		}
+	}
+	
 }
 	
 	

@@ -101,10 +101,10 @@
     "MovementSpeed"       "390"                 // Speed.
     "MovementTurnRate"      "1.0"                 // Turning rate.
 	
-    "StatusHealth"        "10000"                 // Base health.
-    "StatusHealthRegen"     "10.0"                 // Health regeneration rate.
-    "StatusMana"        "1000"                   // Base mana.
-    "StatusManaRegen"     "15"                 // Mana regeneration rate.
+    "StatusHealth"        "100"                 // Base health.
+    "StatusHealthRegen"     "0.0"                 // Health regeneration rate.
+    "StatusMana"        "300"                   // Base mana.
+    "StatusManaRegen"     "10"                 // Mana regeneration rate.
 
     "VisionDaytimeRange"    "800"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1000"                  // Range of vision at night time.
